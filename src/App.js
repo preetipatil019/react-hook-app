@@ -1,8 +1,10 @@
 
 import HookMemo from "./HookMemo";
 import HookUseEffect from "./HookUseEffect";
+import HookUseRef from "./HookUseRef";
 import HookUseState from "./HookUseState";
-
+import HookUseContext from "./HookUseContext";
+import { ThemeProvider } from "./ThemeContext";
 
 function App() {
 
@@ -18,6 +20,17 @@ function App() {
       <br />
       <br />
       <HookMemo />
+      <br />
+      <br />
+      <HookUseRef />
+      <br />
+      <br />
+      <ThemeProvider>
+    <HookUseContext />
+      </ThemeProvider>
+
+     
+
   </>
   );
 }
