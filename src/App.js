@@ -5,12 +5,22 @@ import HookUseRef from "./HookUseRef";
 import HookUseState from "./HookUseState";
 import HookUseContext from "./HookUseContext";
 import { ThemeProvider } from "./ThemeContext";
+import MapAndFilter from "./MapAndFilter";
+import { Controlled, UnControlled } from "./ControlledUncontrolled";
 
 function App() {
 
 
   return (
     <>
+      <div>JavaScript</div>
+      <br />
+      <br />
+      <MapAndFilter />
+      <br />
+      <br />
+      <UnControlled />
+      <Controlled />
       <div>React Hooks</div>
       <br></br>
       <HookUseState />
@@ -28,6 +38,8 @@ function App() {
       <ThemeProvider>
     <HookUseContext />
       </ThemeProvider>
+
+
 
      
 
